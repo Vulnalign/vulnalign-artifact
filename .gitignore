@@ -1,0 +1,11 @@
+# never commit datasets / large files
+DATA/
+*.jsonl
+*.zip
+
+# local secrets
+.env
+
+# notebook junk
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/
