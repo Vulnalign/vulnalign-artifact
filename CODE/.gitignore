@@ -4,3 +4,8 @@ DATA/vulnalign_validated.jsonl
 .ipynb_checkpoints/
 **/.ipynb_checkpoints/
 .env
+
+# Ignore accidental duplicate notebooks in repo root
+Step1_NVD_Collect.ipynb
+Step2_Available_url_collection.ipynb
+Step3_patch_collection.ipynb
