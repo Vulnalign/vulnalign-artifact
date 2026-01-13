@@ -40,6 +40,9 @@ vulnalign-artifact/
 Note: The full VulnAlign dataset is several gigabytes in size and is not included in this repository.
 Instead, we provide two representative samples that match the schema and processing stages described in the paper.
 
+---
+
+
 📄 Dataset Samples
 
 1. DATA/master_validated_dataset.jsonl
@@ -73,6 +76,7 @@ Compared to master_validated_dataset.jsonl, this file:
 
 This file is intended for quick inspection and for understanding the final dataset structure without noise.
 
+---
 
 
 Code Overview (Inspection-Oriented)
