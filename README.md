@@ -54,8 +54,7 @@ It includes (field names may be abbreviated in practice):
   - CVE and repository metadata (e.g., cve_id, repo_url, commit_sha)
   - Vulnerable / patched code identifiers (e.g., original_filename, file paths)
   -Semgrep match information:
-
-      - high-precision / extended-precision counts (HP/EP)
+      -  Exact Positive / Hierarchy True Positive counts (EP/HP)
       - rule identifiers
   - Flags for mismatches / noisy examples
   -Intermediate validation metadata used to derive the final dataset
@@ -84,21 +83,14 @@ Code Overview (Inspection-Oriented)
 The code is organized so that reviewers can trace each stage of the pipeline. Running everything end-to-end is not required and may be impractical (external APIs, runtime), but the logic is fully visible.
 
 CODE/mining/
-
 Contains notebooks and scripts used to:
-
  - Download CVE data from NVD
-
  - Resolve references to repositories and commits
-
-- Extract vulnerable and patched code from version control history
-
+ - Extract vulnerable and patched code from version control history
 These scripts depend on NVD dumps and external Git hosting (e.g., GitHub) and are not expected to be re-run during artifact review.
 
 CODE/validation/
-
 Contains notebooks and scripts used to:
-  
   - Run Semgrep on candidate vulnerability–fix pairs
   - Compute EP/HP metrics
   - Flag mismatches and noisy examples
@@ -106,19 +98,12 @@ Contains notebooks and scripts used to:
 This code is responsible for producing the kinds of results seen in master_validated_dataset.jsonl.
 
 CODE/ontology_scripts/
-
 Contains notebooks and scripts used to:
-
   - Reason over the CWE hierarchy
-
   - Reconcile high-level / abstract CWEs with more specific CWE categories
-
   - Produce the reconciled labels used in the final dataset
 
 sanitize.py
-
 Utility helper for:
-
   - Cleaning notebooks or exported files
-
   - Normalizing formats before committing / sharing
