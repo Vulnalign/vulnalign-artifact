@@ -45,11 +45,10 @@ Instead, we provide two representative samples that match the schema and process
 
 📄 Dataset Samples
 
-1. DATA/master_validated_dataset.jsonl
+DATA/master_validated_dataset.jsonl
   - JSONL file (one JSON object per line).
   - Contains the full Semgrep validation output for a sample of vulnerability–fix pairs.
-
-It includes (field names may be abbreviated in practice):
+  -It includes (field names may be abbreviated in practice):
 
   - CVE and repository metadata (e.g., cve_id, repo_url, commit_sha)
   - Vulnerable / patched code identifiers (e.g., original_filename, file paths)
