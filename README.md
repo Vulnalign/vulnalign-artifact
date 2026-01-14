@@ -46,7 +46,7 @@ Instead, we provide two representative samples that match the schema and process
 
 📄 Dataset Samples
 
-DATA/master_validated_dataset.jsonl
+1. DATA/master_validated_dataset.jsonl: 
 This file is intended to illustrate the complete validation output, including both “good” and “noisy” cases, so reviewers can see how Semgrep and filtering operate.
   - JSONL file (one JSON object per line).
   - Contains the full Semgrep validation output for a sample of vulnerability–fix pairs.
@@ -56,13 +56,11 @@ This file is intended to illustrate the complete validation output, including bo
     - Intermediate validation metadata used to derive the final dataset
 
 
-DATA/unique_validated_dataset_for_review.jsonl
+2. DATA/unique_validated_dataset_for_review.jsonl: 
 This file is intended for quick inspection and for understanding the final dataset structure without noise.
   - JSONL file (one JSON object per line).
   - Contains only validated examples (HP/EP).
-Compared to master_validated_dataset.jsonl, this file:
-  - Excludes mismatched entries
-  - Reflects the clean subset used for experiments in the paper
+Compared to master_validated_dataset.jsonl, this file excludes mismatched entries and reflects the clean subset used for experiments in the paper.
 
 
 ---
