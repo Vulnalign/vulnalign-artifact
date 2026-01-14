@@ -26,13 +26,6 @@ vulnalign-artifact/
 │   └── master_validated_dataset.jsonl    # Representative dataset snapshots (JSONL)
 │   └── samples/              # Representative dataset snapshots (JSONL)
 │
-├── CONFIG/
-│   ├── reproduce_config.json         # Parameters for sample reproduction
-│   └── github_tokens.txt.example     # Template for optional GitHub tokens
-│
-├── SCRIPTS/
-│   └── reproduce_results.sh          # Reproduces validation + ontology steps
-│
 ├── OPEN_SCIENCE.md
 ├── REPRODUCIBILITY.md
 └── README.md
