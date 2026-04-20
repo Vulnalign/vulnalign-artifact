@@ -1,4 +1,4 @@
-# VulnAlign Artifact 
+# Dataset Artifact 
 
 Artifact repository for the paper "From Mining to Meaning: Ontology-Driven Validation of Vulnerability Labels in Large-Scale Datasets" (ESORICS 2026)
 
