@@ -22,10 +22,6 @@ vulnalign-artifact/
 │   ├── validation/                                   # Static validation (Semgrep-based)
 │   ├── ontology_scripts/                             # CWE hierarchy reasoning and reconciliation
 │   ├── experiments/                                  # Classification downstream task
-│   ├── reconstruction/                               #(post-submission)
-│   │   ├── build_commit_repo_mapping.py
-│   │   ├── merge_fixed_repo_into_refined.py
-│   │   └── reextract_aligned.py
 │   └── sanitize.py                                    # Utility script (formatting / cleanup)
 │
 ├── DATA/
